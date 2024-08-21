@@ -168,8 +168,15 @@ hugo new site ffblog 其中 &ldquo;ffblog&rdquo; 是网站文件 …
 </main>
 
 <div class="pagination">
-	<a class="pagination__item pagination__item--prev btn" href="/posts/page/4/">«</a>
-	<span class="pagination__item pagination__item--current">5/5</span>
+    <a class="pagination__item pagination__item--first btn" href="/posts/">&lt;&lt;</a>
+    <a class="pagination__item pagination__item--prev btn" href="/posts/page/4/">&lt;</a>
+    <a class="pagination__item pagination__item--page btn" href="/posts/">1</a>
+    <a class="pagination__item pagination__item--page btn" href="/posts/page/2/">2</a>
+    <a class="pagination__item pagination__item--page btn" href="/posts/page/3/">3</a>
+    <a class="pagination__item pagination__item--page btn" href="/posts/page/4/">4</a>
+    <span class="pagination__item pagination__item--current btn">5</span>
+    <span class="pagination__item pagination__item--next btn disabled">&gt;</span>
+    <span class="pagination__item pagination__item--last btn disabled">&gt;&gt;</span>
 </div>
 
 			</div>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="zh-cn">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>技术备忘--windows篇(随更) - 自游鱼</title>
@@ -25,10 +25,9 @@ GRF89-QM67C-DRTP9-JD3QR-6P4B9
 使用net use 列出已连接的网络共享，如返回类似信息： \192.168.1.111\share
 \192.168.1.51\work
 使用net use 连接名 /del 删除这个共享连接，例如要删除上面的&quot;\192.168.1.111\share&quot;这个共享，执行： net use \\192.168.1.111\share /del
-&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.. powershell查看文件的MD5码
-Get-FileHash -Algorithm MD5 -Path 文件路径" />
+删除共享连接后，一般会自动刷新网络连接信息，但有时由于系统缓存或其他原因，可能需要手动触发刷新： Ctrl&#43;Shift&#43;Esc 开任务管理器在“进程-&gt;应用”中找到“Windows 资源管理器&quot;右击选择&quot;重启&quot;，或者，“运行”(或在命令提示符中输入 )explorer.exe 并回车，这会直接重启资源管理器。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/jsbw202410c/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://freezz.cc/posts/jsbw202410c/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-04-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2024-04-10T00:00:00+00:00" />
 
@@ -51,10 +50,9 @@ GRF89-QM67C-DRTP9-JD3QR-6P4B9
 使用net use 列出已连接的网络共享，如返回类似信息： \192.168.1.111\share
 \192.168.1.51\work
 使用net use 连接名 /del 删除这个共享连接，例如要删除上面的&quot;\192.168.1.111\share&quot;这个共享，执行： net use \\192.168.1.111\share /del
-&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.. powershell查看文件的MD5码
-Get-FileHash -Algorithm MD5 -Path 文件路径"><meta itemprop="datePublished" content="2024-04-10T00:00:00+00:00" />
+删除共享连接后，一般会自动刷新网络连接信息，但有时由于系统缓存或其他原因，可能需要手动触发刷新： Ctrl&#43;Shift&#43;Esc 开任务管理器在“进程-&gt;应用”中找到“Windows 资源管理器&quot;右击选择&quot;重启&quot;，或者，“运行”(或在命令提示符中输入 )explorer.exe 并回车，这会直接重启资源管理器。"><meta itemprop="datePublished" content="2024-04-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="92">
+<meta itemprop="wordCount" content="98">
 <meta itemprop="keywords" content="windows," />
 		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="技术备忘--windows篇(随更)"/>
 <meta name="twitter:description" content="Windows 打开移动硬盘U盘提示：“无法访问，磁盘结构损坏且无法读取”的解决方法：
@@ -75,8 +73,7 @@ GRF89-QM67C-DRTP9-JD3QR-6P4B9
 使用net use 列出已连接的网络共享，如返回类似信息： \192.168.1.111\share
 \192.168.1.51\work
 使用net use 连接名 /del 删除这个共享连接，例如要删除上面的&quot;\192.168.1.111\share&quot;这个共享，执行： net use \\192.168.1.111\share /del
-&hellip;&hellip;&hellip;&hellip;&hellip;&hellip;.. powershell查看文件的MD5码
-Get-FileHash -Algorithm MD5 -Path 文件路径"/>
+删除共享连接后，一般会自动刷新网络连接信息，但有时由于系统缓存或其他原因，可能需要手动触发刷新： Ctrl&#43;Shift&#43;Esc 开任务管理器在“进程-&gt;应用”中找到“Windows 资源管理器&quot;右击选择&quot;重启&quot;，或者，“运行”(或在命令提示符中输入 )explorer.exe 并回车，这会直接重启资源管理器。"/>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -87,6 +84,7 @@ Get-FileHash -Algorithm MD5 -Path 文件路径"/>
 	
 
 	<link rel="shortcut icon" href="/favicon.ico">
+		
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -155,6 +153,8 @@ GRF89-QM67C-DRTP9-JD3QR-6P4B9<br>
 \192.168.1.51\work<br>
 使用<code>net use 连接名 /del</code> 删除这个共享连接，例如要删除上面的&quot;\192.168.1.111\share&quot;这个共享，执行：
 <code>net use \\192.168.1.111\share /del</code><br>
+删除共享连接后，一般会自动刷新网络连接信息，但有时由于系统缓存或其他原因，可能需要手动触发刷新：
+Ctrl+Shift+Esc 开任务管理器在“进程-&gt;应用”中找到“Windows 资源管理器&quot;右击选择&quot;重启&quot;，或者，“运行”(或在命令提示符中输入 )explorer.exe 并回车，这会直接重启资源管理器。<br>
 &hellip;&hellip;&hellip;&hellip;&hellip;&hellip;..</li>
 <li>powershell查看文件的MD5码<br>
 <code>Get-FileHash -Algorithm MD5 -Path 文件路径</code><br>

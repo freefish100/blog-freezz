@@ -62,8 +62,8 @@
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>浪潮NF5270M6服务器，安装了ubuntu20.04，但内置的网上识别有问题，虽然在系统中能识别有内置的网卡，但驱动有问题，不能正常使用，需要安装官方提供的驱动程序。</p>
-<p>1.把网卡驱动上传到服务器中，进入src目录<br>
+			<p>浪潮NF5270M6服务器，安装了ubuntu20.04，虽然在系统中能识别有内置的网卡，但驱动有问题，无法查看到网卡的网络接口无法获取到ip，需要安装官方提供的驱动程序。</p>
+<p>1.把包括有网卡驱动文件的ngbe文件夹上传到服务器中，进入src目录<br>
 <img src="/img/666985ec261b3bba81aacb1bbb83d876.png" alt="浪潮NF5270M6服务器 ubuntu20.04 编译安装网卡驱动"></p>
 <p>2.安装必需的构建工具和内核头文件，会提示安装一些依赖和软件<br>
 <code>sudo apt install build-essential linux-headers-$(uname -r)</code><br>

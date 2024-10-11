@@ -6,8 +6,15 @@
     <description>Recent content on 自游鱼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://freezz.cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>让Hugo静态网站的链接在新窗口中打开</title>
+      <link>https://freezz.cc/posts/jsbw202410d/</link>
+      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://freezz.cc/posts/jsbw202410d/</guid>
+      <description>1、创建短代码文件：&#xA;在Hugo网站根目录中，导航到 layouts/shortcodes/ 目录（如果目录不存在，就创建），然后创建一个名为 link.html 的文件，内容如下：&#xA;&amp;lt;a href=&amp;#34;{{ .Get &amp;#34;href&amp;#34; }}&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener noreferrer&amp;#34;&amp;gt;{{ .Inner }}&amp;lt;/a&amp;gt; 2、在Markdown文件中使用短代码：&#xA;{{&amp;lt; link href=&amp;ldquo;https://freezz.cc&amp;rdquo; &amp;gt;}}在新窗口中打开freezz.cc网站{{&amp;lt; /link &amp;gt;}}&#xA;效果如下 ：&#xA;在新窗口中打开链接 https://freezz.cc </description>
+    </item>
     <item>
       <title>DELL戴尔服务器R750 H755阵列卡 配置磁盘阵列raid</title>
       <link>https://freezz.cc/posts/js20240920b/</link>
@@ -331,11 +338,11 @@
       <description>Markdown 基本语法 Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。 它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。 因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia、简书等。&#xA;Markdown 标题语法 要创建标题，请在单词或短语前面添加井号 (#) 。# 的数量代表了标题的级别。例如，添加三个 # 表示创建一个三级标题 () (例如：### My Header)。&#xA;Markdown 段落 要创建段落，请使用空白行将一行或多行文本进行分隔。不要用空格（spaces）或制表符（ tabs）缩进段落。&#xA;Markdown 换行语法 在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(&amp;lt;br&amp;gt;)。 几乎每个 Markdown 应用程序都支持两个或多个空格进行换行，称为 结尾空格（trailing whitespace) 的方式，但这是有争议的，因为很难在编辑器中直接看到空格，并且很多人在每个句子后面都会有意或无意地添加两个空格。由于这个原因，你可能要使用除结尾空格以外的其它方式来换行。幸运的是，几乎每个 Markdown 应用程序都支持另一种换行方式：HTML 的 标签。 为了兼容性，请在行尾添加“结尾空格”或 HTML 的 &amp;lt;br&amp;gt; 标签来实现换行。&#xA;Markdown 强调语法 通过将文本设置为粗体或斜体来强调其重要性。&#xA;粗体（Bold） 要加粗文本，请在单词或短语的前后各添加两个星号（asterisks）。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号（asterisks）。例如：&#xA;我在学习**Markdown**语法 输出结果：我在学习Markdown语法&#xA;斜体（Italic） 要用斜体显示文本，请在单词或短语前后添加一个星号（asterisk）。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。例如：&#xA;我在学习*Markdown*语法 输出结果：我在学习Markdown语法&#xA;粗体（Bold）和斜体（Italic） 要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。例如：&#xA;我在学习***Markdown***语法 输出结果：我在学习Markdown语法&#xA;Markdown 引用语法 要创建块引用，请在段落前添加一个 &amp;gt; 符号&#xA;&amp;gt;正在学习Markdown的引用语法。&#xA;输出效果：&#xA;正在学习Markdown的引用语法。&#xA;多个段落的块引用：块引用可以包含多个段落。为段落之间的空白行添加一个 &amp;gt; 符号&#xA;&amp;gt;正在学习Markdown的引用语法。 &amp;gt; &amp;gt;正在学习Markdown的引用语法。 输出效果：</description>
     </item>
     <item>
-      <title>实用网址收录(不定时更新)</title>
+      <title>网址收录书签备忘(随更)</title>
       <link>https://freezz.cc/posts/rc20220223/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://freezz.cc/posts/rc20220223/</guid>
-      <description>微软Azure云服务平台永久免费和限时免费项目&#xA;微软Azure文本转语音&#xA;微软Azure语音转文本&#xA;微软Azure语音翻译&#xA;图片在线去背景 https://www.photoroom.com/tools/remove-object-from-photo/&#xA;Chorme谷歌浏览器插件下载CRX搜搜&#xA;https://www.crxsoso.com/&#xA;硬盘容量整数分区在线计算工具 支持 NTFS 和 FAT32&#xA;https://tool.lu/partition/index.html&#xA;https://www.iplaysoft.com/tools/partition-calculator/&#xA;RAID 容量计算器&#xA;https://www.seagate.com/cn/zh/internal-hard-drives/raid-calculator/ （希捷科技） https://www.synology.cn/zh-cn/support/RAID_calculator （群晖科技）&#xA;Windows/Office 各版本镜像下载&#xA;https://next.itellyou.cn/&#xA;https://msdn.itellyou.cn/&#xA;http://www.imsdn.cn/&#xA;https://hellowindows.cn/&#xA;https://msdn.sjjzm.com/&#xA;https://www.xitongku.com/ (含office)&#xA;windows11官网iso镜像下载&#xA;https://www.microsoft.com/zh-cn/software-download/windows11&#xA;windows10官网iso镜像下载&#xA;https://www.microsoft.com/zh-cn/software-download/windows10&#xA;微软Windows密钥管理服务 (KMS) 客户端激活和通用批量许可证密钥 (GVLK)，Windows全系列。安装产品密钥命令 &amp;quot; slmgr /ipk 密钥 &amp;ldquo;， 如 slmgr /ipk D2N9P-3P6X9-2R39C-7RTCD-MDVJX&#xA;https://docs.microsoft.com/zh-cn/windows-server/get-started/kms-client-activation-keys&#xA;在线文件转换器Convertio。Convertio是一个在线文件格式转换工具网站，可以转换的类型有：文档、图像、音频、视频、电子书、字体等等。&#xA;https://convertio.co/zh/&#xA;大文件临时存储&#xA;https://musetransfer.com/&#xA;https://www.tmp.link/&#xA;Markdown 语法官方教程&#xA;https://markdown.com.cn/</description>
+      <description>基于Google搜索引擎，屏蔽内容农场&#xA;https://search.luxirty.com/&#xD;如果想添加到浏览器中，搜索语法是search.luxirty.com/search?q=&#xA;微软Azure云服务平台永久免费和限时免费项目&#xA;微软Azure文本转语音&#xA;微软Azure语音转文本&#xA;微软Azure语音翻译&#xA;图片在线去背景 https://www.photoroom.com/tools/remove-object-from-photo/&#xA;Chorme谷歌浏览器插件下载CRX搜搜&#xA;https://www.crxsoso.com/&#xA;硬盘容量整数分区在线计算工具 支持 NTFS 和 FAT32&#xA;https://tool.lu/partition/index.html&#xA;https://www.iplaysoft.com/tools/partition-calculator/&#xA;RAID 容量计算器&#xA;https://www.seagate.com/cn/zh/internal-hard-drives/raid-calculator/ （希捷科技） https://www.synology.cn/zh-cn/support/RAID_calculator （群晖科技）&#xA;Windows/Office 各版本镜像下载&#xA;https://next.itellyou.cn/&#xA;https://msdn.itellyou.cn/&#xA;http://www.imsdn.cn/&#xA;https://hellowindows.cn/&#xA;https://msdn.sjjzm.com/&#xA;https://www.xitongku.com/ (含office)&#xA;windows11官网iso镜像下载&#xA;https://www.microsoft.com/zh-cn/software-download/windows11&#xA;windows10官网iso镜像下载&#xA;https://www.microsoft.com/zh-cn/software-download/windows10&#xA;微软Windows密钥管理服务 (KMS) 客户端激活和通用批量许可证密钥 (GVLK)，Windows全系列。安装产品密钥命令 &amp;quot; slmgr /ipk 密钥 &amp;ldquo;， 如 slmgr /ipk D2N9P-3P6X9-2R39C-7RTCD-MDVJX&#xA;https://docs.microsoft.com/zh-cn/windows-server/get-started/kms-client-activation-keys&#xA;在线文件转换器Convertio。Convertio是一个在线文件格式转换工具网站，可以转换的类型有：文档、图像、音频、视频、电子书、字体等等。&#xA;https://convertio.co/zh/&#xA;大文件临时存储&#xA;https://musetransfer.com/&#xA;https://www.tmp.link/&#xA;Markdown 语法官方教程&#xA;https://markdown.com.cn/&#xA;戴尔DELL服务器相关&amp;ndash;胖大牛&#xA;http://b.7dell.com/index.php/index.html</description>
     </item>
     <item>
       <title>兄弟MFC-8535DN打印机更换硒鼓</title>

@@ -16,7 +16,7 @@
 		<meta itemprop="name" content="Linux CentOS 命令摘录备忘">
 <meta itemprop="description" content="Linux CentOS 命令摘录备忘"><meta itemprop="datePublished" content="2022-04-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2022-04-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1610">
+<meta itemprop="wordCount" content="1660">
 <meta itemprop="keywords" content="Linux," />
 		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Linux CentOS 命令摘录备忘"/>
 <meta name="twitter:description" content="Linux CentOS 命令摘录备忘"/>
@@ -514,6 +514,21 @@ Systemd是Linux系统工具，Systemd拥有强大的解决与系统日志记录�
 journalctl –until 2020-05-27 #查找2020-05-27日期的日志<br>
 查看内核日志：journalctl -k<br>
 查找指定客户(UID)日志：journalctl _UID=1000</p>
+<p><strong>查看网卡ip地址</strong><br>
+<code>ip a</code><br>
+会返回类似如下信息：</p>
+<pre tabindex="0"><code>......
+eno4: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether b8:ca:3a:6a:86:9f brd ff:ff:ff:ff:ff:ff
+    altname enp1s0f3
+    inet 192.168.1.222/24 brd 192.168.1.255 scope global noprefixroute eno4
+       valid_lft forever preferred_lft forever
+......
+</code></pre><p>第一个UP (在&lt;&gt;括号中): 表示网络接口已启用。这是接口的管理状态，说明接口在软件层面被设置为开启状态。LOWER_UP: 表示物理层（第一层）是正常的，即网线已连接或无线信号正常。这表明硬件层面是正常工作的。第三个UP (在state后): 表示接口的运行状态。这意味着接口不仅被启用，而且实际上是可以正常工作的。<br>
+第一个UP: 接口被启用（软件配置）<br>
+LOWER_UP: 物理连接正常（硬件状态）<br>
+state UP: 接口正在运行（运行状态）<br>
+这三个&quot;UP&quot;状态共同表明这个网络接口在各个层面（软件配置、硬件连接和实际运行）都是正常工作的。</p>
 
 		</div>
 		<footer class="post__footer">

@@ -44,7 +44,7 @@ Precision Workstation 工作站诊断指示灯参考指南 DELL:比如目前是3
 …………………………………. T140机器进入S140软阵列
 开机按F2，进入BIOS，device setting，确认下当前有没有S140，如果没有，返回到system bios，SATA setting，选择raid mode 然后保存退出， 重启服务器进入BIOS，device setting，选择S140进入，之后点击virtual disk management，点击create virtual disk，去创建阵列。"><meta itemprop="datePublished" content="2024-04-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="363">
+<meta itemprop="wordCount" content="365">
 <meta itemprop="keywords" content="服务器,戴尔," />
 		<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="技术备忘--戴尔设备篇(随更)"/>
 <meta name="twitter:description" content="戴尔DELL设备 戴尔计算机不能通电、无法开机自检、无法启动或无视频的问题 Precision Workstation 工作站诊断指示灯参考指南
@@ -157,8 +157,9 @@ Precision Workstation 工作站诊断指示灯参考指南 DELL:比如目前是3
 ………………………………….</li>
 <li>更新固件的两种方法：<br>
 <a href="https://mp.weixin.qq.com/s/6NultA1aaoDD-rb9XaMF1A">F10 LifeCycle下升级固件</a><br>
-<a href="https://mp.weixin.qq.com/s/5Ez1jd_HEV221T4_aPi-6A">14G服务器如何在IDRAC下更新固件</a><br>
+<a href="https://mp.weixin.qq.com/s/5Ez1jd_HEV221T4_aPi-6A">14G服务器如何在IDRAC下更新BIOS</a><br>
 更新BIOS和更新IDRAC操作方法一样，只是上传的文件不一样，更新BIOS时上传BIOS文件，更新IDRAC时上传IDRAC文件。<br>
+iDRAC固件更新：  1、右击打开下载的iDRAC固件，使用解压软件（7Z、ZIP、360压缩等软件）解压；2、提取文件夹payload下的firmimgFIT.d9到本地文件夹；3、在iDRAC更新固件界面（菜单栏选择维护-系统更新-手动更新），上载firmimgFIT.d9这个文件更新iDRAC.<br>
 ………………………………….</li>
 <li>IDRAC管理页面中，SSD硬盘的“剩余额定写入耐久性”，是指SSD硬盘的损耗情况。SSD写寿命限制：是指，对于达到写寿命上限的SSD，视为设备损耗， 0% 是上限，到0% 就是SSD的写入寿命快到了，这种没有保修了。<br>
 ………………………………….</li>
@@ -363,11 +364,11 @@ PowerEdge R740 系统支持集成 Matrox G200eW3 图形控制器支持的视频�
 	<h4 class="widget__title">近期文章</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/js20241205/">储迹存储功能界面，Rocky linux 9 挂载存储并配置LVM分区</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/jsbw202410d/">让Hugo静态网站的外部链接在新窗口中打开</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/js20240920b/">DELL戴尔服务器R750 H755阵列卡 配置磁盘阵列raid</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/js20240920/">使用Windows凭据管理轻松切换访问NAS或Windows共享文件的账户</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/js20240919/">浪潮NF5270M6服务器 ubuntu20.04 编译安装网卡驱动</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/js20240918/">DELL戴尔服务器 H730阵列卡离线扩容</a></li>
 		</ul>
 	</div>
 </div>
@@ -396,6 +397,7 @@ PowerEdge R740 系统支持集成 Matrox G200eW3 图形控制器支持的视频�
 		<a class="widget-taglist__link widget__link btn" href="/tags/raid/" title="RAID">RAID</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vmware/" title="Vmware">Vmware</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/windows/" title="Windows">Windows</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%E4%BF%A1%E5%88%9B%E4%BA%A7%E5%93%81/" title="信创产品">信创产品</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%AD%98%E5%82%A8%E8%AE%BE%E5%A4%87/" title="存储设备">存储设备</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99/" title="实用网站">实用网站</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%E6%88%B4%E5%B0%94/" title="戴尔">戴尔</a>

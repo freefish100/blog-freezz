@@ -6,21 +6,21 @@
     <description>Recent content on 自游鱼</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://freezz.cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用Windows凭据管理轻松切换访问NAS或Windows共享文件的账户</title>
+      <link>https://freezz.cc/posts/js20240920/</link>
+      <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://freezz.cc/posts/js20240920/</guid>
+      <description>Windows电脑或服务器以及NAS文件共享设备在配置了文件共享服务后，通常会建立多个不同权限的账户，来给予用户在访问共享文件时有不同的控制和管理权限。当我们首次使用某个账户登录访问共享文件夹，会弹出用户登录的窗口，要求输入用户名和密码，这时如果勾选了“记住我的凭据”选项，以后再访问这个共享文件夹时，就会自动使用这次登录所使用用户名自动登录，而不需要再验证了，感觉挺方便的。不过，如果有时我们需要更换其它的用户来访问共享文件夹，那怎么办呢？下面分享具体的操作方法。&#xA;我们打开Windows电脑的 [控制面板] &amp;gt; [凭据管理器]&#xA;其中 [Windows凭据] 下就记录着我们登录访问共享文件的登录信息。展开其中一个你想要修改的登录共享文件的凭证，比如这里要修改访问这台名为“SXNAS”设备的登录账户，点击”编辑“。顺便说明一下：共享文件的设备可以是一台部署了文件共享服务的电脑或者是一台NAS共享设备，“Internet地址或网络地址”处会显示出设备的名称或IP地址&#xA;输入想要登录的用户名和密码，点击”保存“，这时重新访问共享文件，就会使用在 [Windows凭据] 那修改后的用户名自动进入共享文件了。&#xA;如果上面的修改没有生效，可以重启一下“windows资源管理器”程序：鼠标右击”开始“菜单&amp;gt;&amp;ldquo;任务管理器&amp;quot;或者快捷键 Ctrl+Shift+Esc 打开“任务管理器”，找到“windows资源管理器”或者&amp;quot;explorer.exe&amp;quot;并右击它，选择”重新启动“，这时桌面会闪一下，桌面图标和底下的任务栏会消失几秒钟，等待桌面图标和底下的任务栏重新加载出来后，再重新访问共享文件就可以了。&#xA;如果你觉得这个方法不够直观，也可以在[windows凭据]那，删除相应的凭据，然后重新启动”Windows资源管理器“程序，然后再访问共享文件夹，这时，会重新弹出登录的窗口，输入你要登录使用的用户名密码，即可。&#xA;当然，在删除凭据后，你也可以通过 “添加Windows凭据”，来重新添加访问设备的账号，来达到更换访问共享文件账户的目的。&#xA;如果之前是把网络共享文件夹映射成本地磁盘的，那就需要先断开映射连接，然后编辑或删除[Windows凭据]中对应的登录信息，再重新访问共享文件夹或对共享文件夹进行映射。</description>
+    </item>
     <item>
       <title>DELL戴尔服务器R750 H755阵列卡 配置磁盘阵列raid</title>
       <link>https://freezz.cc/posts/js20240920b/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://freezz.cc/posts/js20240920b/</guid>
       <description>戴尔PowerEdge R750是一款高性能、可扩展的双路机架式服务器，适用于各种工作负载，如虚拟化、数据库、高性能计算等，R750的高性能、可扩展性和可靠性使其成为许多企业的理想选择。&#xA;R750服务器搭配PERC H755 RAID控制器是一个不错的组合，尤其是对于需要高性能和高可靠性的存储解决方案的应用场景。H755基于PCIe 4.0接口，提供更高的数据传输速率和带宽，配备高达8GB的NV缓存（Non-Volatile Cache），提高写入性能并保护数据免受电源故障的影响，H755支持RAID 0、1、5、6、10、50和60，提供b 灵活的数据保护和性能选项。&#xA;下面详细分享戴尔PowerEdge R750 + PERC H755 RAID控制器 配置阵列的具体步骤：&#xA;服务器开机后，当出现“DELL EMC”logo和功能键列表界面时，按下键盘的“F2”键，然后等待进入系统设置&#xA;在 [System Setup] 下使用方向键选择 [Device Settings] ，并按回车键，进入设备列表&#xA;在 [Device Settings] 下选择要配置的RAID控制器，这里就是H755这张阵列卡了 进入主菜单功能 [Main Menu] 列表&#xA;在进行配置虚拟磁盘阵列前，需要先看看物理硬盘的状态。选择 [Physical Disk Management] 如图所示，前面两行00和01槽位的硬盘是SSD类型的硬盘，处于“Online”状态，已经组建了RAID阵列的。其它的8个HDD机械硬盘，处于&amp;quot;Ready&amp;quot;就绪状态，可以组建RAID阵列 按“ESC”键返回到上一级 [Main Menu]， 选择 [Configuration Management] 进入配置管理 创建阵列&#xA;在 [Configuration Management] 下选择 [Create Virtual Disk] 创建虚拟磁盘&#xA;这里按实际情况选择虚拟磁盘RAID级别。例如2个硬盘的，可以选择RAID1，3个硬盘的，可以选择RAID5&#xA;本机有8个SAS的机械硬盘，选择使用RAID5级别&#xA;勾选要组建虚拟磁盘阵列的物理硬盘。注意，不建议将SSD和HDD混合在同一个RAID阵列中，要将SSD和HDD分别配置在不同的RAID阵列中&#xA;勾选好磁盘后，选择 [ Apply Changes] 提交变更&#xA;应用变更后，选中 [Create Virtual Disk] 创建阵列&#xA;这里会提示磁盘上的数据会删除，确认操作即可&#xA;到此，虚拟磁盘阵列的创建就完成了。&#xA;按“ESC”键返回到[Configuration Management] 界面，查看磁盘组信息</description>
-    </item>
-    <item>
-      <title>使用Windows凭据管理轻松切换访问NAS或Windows共享文件的账户</title>
-      <link>https://freezz.cc/posts/js20240920/</link>
-      <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://freezz.cc/posts/js20240920/</guid>
-      <description>Windows电脑或服务器以及NAS文件共享设备在配置了文件共享服务后，通常会建立多个不同权限的账户，来给予用户在访问共享文件时有不同的控制和管理权限。当我们首次使用某个账户登录访问共享文件夹，会弹出用户登录的窗口，要求输入用户名和密码，这时如果勾选了“记住我的凭据”选项，以后再访问这个共享文件夹时，就会自动使用这次登录所使用用户名自动登录，而不需要再验证了，感觉挺方便的。不过，如果有时我们需要更换其它的用户来访问共享文件夹，那怎么办呢？下面分享具体的操作方法。&#xA;我们打开Windows电脑的 [控制面板] &amp;gt; [凭据管理器]&#xA;其中 [Windows凭据] 下就记录着我们登录访问共享文件的登录信息。展开其中一个你想要修改的登录共享文件的凭证，比如这里要修改访问这台名为“SXNAS”设备的登录账户，点击”编辑“。顺便说明一下：共享文件的设备可以是一台部署了文件共享服务的电脑或者是一台NAS共享设备，“Internet地址或网络地址”处会显示出设备的名称或IP地址&#xA;输入想要登录的用户名和密码，点击”保存“，这时重新访问共享文件，就会使用在 [Windows凭据] 那修改后的用户名自动进入共享文件了。&#xA;如果上面的修改没有生效，可以重启一下“windows资源管理器”程序：鼠标右击”开始“菜单&amp;gt;&amp;ldquo;任务管理器&amp;quot;或者快捷键 Ctrl+Shift+Esc 打开“任务管理器”，找到“windows资源管理器”或者&amp;quot;explorer.exe&amp;quot;并右击它，选择”重新启动“，这时桌面会闪一下，桌面图标和底下的任务栏会消失几秒钟，等待桌面图标和底下的任务栏重新加载出来后，再重新访问共享文件就可以了。&#xA;如果你觉得这个方法不够直观，也可以在[windows凭据]那，删除相应的凭据，然后重新启动”Windows资源管理器“程序，然后再访问共享文件夹，这时，会重新弹出登录的窗口，输入你要登录使用的用户名密码，即可。&#xA;当然，在删除凭据后，你也可以通过 “添加Windows凭据”，来重新添加访问设备的账号，来达到更换访问共享文件账户的目的。&#xA;如果之前是把网络共享文件夹映射成本地磁盘的，那就需要先断开映射连接，然后编辑或删除[Windows凭据]中对应的登录信息，再重新访问共享文件夹或对共享文件夹进行映射。</description>
     </item>
     <item>
       <title>浪潮NF5270M6服务器 ubuntu20.04 编译安装网卡驱动</title>

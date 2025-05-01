@@ -4,17 +4,10 @@
     <title>Hugo on 自游鱼</title>
     <link>https://freezz.cc/tags/hugo/</link>
     <description>Recent content in Hugo on 自游鱼</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 10 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://freezz.cc/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>让Hugo静态网站的外部链接在新窗口中打开</title>
-      <link>https://freezz.cc/posts/jsbw202410d/</link>
-      <pubDate>Fri, 11 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://freezz.cc/posts/jsbw202410d/</guid>
-      <description>1、创建短代码文件：&#xA;在Hugo网站根目录中，导航到 layouts/shortcodes/ 目录（如果目录不存在，就创建），然后创建一个名为 link.html 的文件，内容如下：&#xA;&amp;lt;a href=&amp;#34;{{ .Get &amp;#34;href&amp;#34; }}&amp;#34; target=&amp;#34;_blank&amp;#34; rel=&amp;#34;noopener noreferrer&amp;#34;&amp;gt;{{ .Inner }}&amp;lt;/a&amp;gt; 2、在Markdown文件中使用短代码：&#xA;{{&amp;lt; link href=&amp;ldquo;https://freezz.cc&amp;rdquo;&amp;gt;}}在新窗口中打开freezz.cc网站{{&amp;lt; /link &amp;gt;}}&#xA;效果如下 ：&#xA;在新窗口中打开链接 https://freezz.cc </description>
-    </item>
     <item>
       <title>Hugo网站在文章页面中插入文件链接</title>
       <link>https://freezz.cc/posts/20240412a/</link>

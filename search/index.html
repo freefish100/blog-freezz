@@ -33,8 +33,7 @@
           let resultDiv = document.createElement("div");
           let resultTitle = document.createElement("a");
           resultTitle.innerText = searchResults[i].title;
-          
-		  resultTitle.setAttribute('href', baseURL + searchResults[i].permalink);
+          resultTitle.setAttribute('href', searchResults[i].permalink)
           resultDiv.appendChild(resultTitle);
           container.appendChild(resultDiv);
         }
